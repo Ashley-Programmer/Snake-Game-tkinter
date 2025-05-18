@@ -19,12 +19,12 @@ This Snake Game is a modern recreation of the classic arcade game where players 
 
 ## Requirements
 
-- Python 3.x
+- Python3
 - Tkinter (usually included with Python installation)
 
 ## Installation
 
-1. Ensure you have Python 3.x installed on your system
+1. Ensure you have Python3 installed on your system
 2. Clone this repository or download the source code
    ```bash
    git clone https://github.com/yourusername/snake-game.git
