@@ -2,7 +2,7 @@
 
 A classic Snake game implemented in Python using the Tkinter library for GUI.
 
-![Snake Game Screenshot]("C:\Users\motsi\Documents\Snake-Game-tkinter-master\screenshot\tkinter screenshot.png")
+![tkinter screenshot.png]
 
 ## Description
 
