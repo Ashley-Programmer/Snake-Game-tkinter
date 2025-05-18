@@ -2,7 +2,7 @@
 
 A classic Snake game implemented in Python using the Tkinter library for GUI.
 
-![tkinter screenshot.png]
+tkinter screenshot.png
 
 ## Description
 
