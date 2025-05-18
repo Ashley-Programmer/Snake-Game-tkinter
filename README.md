@@ -1,115 +1,118 @@
-Snake Game
+# Snake Game
 
 A classic Snake game implemented in Python using the Tkinter library for GUI.
 
-Description
+![Snake Game Screenshot](/api/placeholder/600/400)
 
-• This Snake Game is a modern recreation of the classic arcade game where players control a snake that grows longer as it consumes food. The game ends if the snake collides with itself or the boundaries of the playing field.
+## Description
 
-Features
+This Snake Game is a modern recreation of the classic arcade game where players control a snake that grows longer as it consumes food. The game ends if the snake collides with itself or the boundaries of the playing field.
 
-Clean, responsive GUI using Tkinter
-Progressive difficulty (snake speed increases over time)
-Score tracking system
-Game over screen with final score display
-Pause/resume functionality
-Arrow key controls for movement
+## Features
 
-Requirements
+- Clean, responsive GUI using Tkinter
+- Score tracking system
+- Game over screen
+- Arrow key controls for snake movement
+- Random food generation
+- Collision detection
 
-Python
-Tkinter (usually included with Python installation)
+## Requirements
 
-Installation
+- Python 3.x
+- Tkinter (usually included with Python installation)
 
-Ensure you have Python installed on your system
-Clone this repository or download the source code
+## Installation
 
-git clone https://github.com/Ashley-Programmer/snake-game.git
-cd snake-game
+1. Ensure you have Python 3.x installed on your system
+2. Clone this repository or download the source code
+   ```bash
+   git clone https://github.com/yourusername/snake-game.git
+   cd snake-game
+   ```
+3. Run the game
+   ```bash
+   python snake_game.py
+   ```
 
-Run the game
+## How to Play
 
-snake_game.py
+1. Start the game by running the script
+2. Control the snake using the arrow keys (←, →, ↑, ↓)
+3. Eat the food (red dots) to grow the snake and increase your score
+4. Avoid colliding with walls or the snake's own body
 
-How to Play
+## Game Controls
 
-● Start the game by running the script
+- **Arrow Keys**: Control snake direction
 
-● Control the snake using the arrow keys (←, →, ↑, ↓)
+## Code Structure
 
-● Eat the food (red square blocks) to grow the snake and increase your score
+The game consists of a single Python file `snake_game.py` containing:
 
-● Avoid colliding with walls or the snake's own body
+- Two classes:
+  - `Snake`: Manages the snake's body, coordinates, and appearance
+  - `Food`: Handles random food generation and placement
 
-Game Controls
+- Main functions:
+  - `next_turn()`: Controls snake movement and eating mechanics
+  - `change_direction()`: Handles user input for changing snake direction
+  - `check_collisions()`: Detects if the snake has hit a wall or itself
+  - `game_over()`: Handles end game state
 
-▪︎ Arrow Keys: Control snake direction
-
-Code Structure
-
-snake_game.py: Main game file containing game logic and GUI implementation
-
-Game Logic
+## Game Logic
 
 The game follows these basic principles:
+1. The snake moves continuously in the current direction
+2. When the snake eats food, it grows longer and the player's score increases
+3. The game ends when the snake hits a wall or itself
+4. Arrow keys control the snake's direction
 
-● The snake moves continuously in the current direction
+## Customization
 
-● When the snake eats food, it grows longer and the player's score increases
+You can customize the game by editing these variables at the top of the `snake_game.py` file:
 
-● The game ends when the snake hits a wall or itself
+- `GAME_WIDTH`: Width of the game window (default: 700)
+- `GAME_HEIGHT`: Height of the game window (default: 550)
+- `SPEED`: Speed of the snake (default: 300ms - lower is faster)
+- `SPACE_SIZE`: Size of each square in the grid (default: 35)
+- `BODY_SIZE`: Initial length of the snake (default: 1)
+- `SNAKE_COLOR`: Color of the snake (default: "#00FF00" - green)
+- `FOOD_COLOR`: Color of the food (default: "#FF0000" - red)
+- `BACKGROUND_COLOR`: Color of the background (default: "black")
 
-● The difficulty increases as the player's score gets higher
+## Future Improvements
 
-Customization
+Here are some potential enhancements you could consider adding:
 
-You can customize the game by editing these variables at the top of the snake_game.py file:
+- Add pause/resume functionality
+- Implement a game restart option
+- Create a high score system that persists between game sessions
+- Add sound effects for eating food and game over
+- Create a start menu screen
+- Add difficulty levels (slower/faster snake speed)
+- Implement different types of food with special effects
+- Add obstacles or walls in the playing field
 
-● GAME_WIDTH: Width of the game window (default: 700)
-
-● GAME_HEIGHT: Height of the game window (default: 700)
-
-● SPEED: Initial speed of the snake (default: 100ms)
-
-● SPACE_SIZE: Size of each square in the grid (default: 20)
-
-● BODY_PARTS: Initial length of the snake (default: 3)
-
-● SNAKE_COLOR: Color of the snake (default: "#00FF00")
-
-● FOOD_COLOR: Color of the food (default: "#FF0000")
-
-● BACKGROUND_COLOR: Color of the background (default: "#000000")
-
-Future Improvements
-
-● Add different levels with obstacles
-
-● Implement a high score system
-
-● Add sound effects and background music
-
-● Create a start menu
-
-● Add power-ups for special abilities
-
-Contributing
+## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-● Fork the repository
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-● Create your feature branch (git checkout -b feature/amazing-feature)
+## License
 
-● Commit your changes (git commit -m 'Add some amazing feature')
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-● Push to the branch (git push origin feature/amazing-feature)
+## Acknowledgments
 
-● Open a Pull Request
+- Inspired by the classic Snake game
+- Built using Python and Tkinter
 
-Contact
-
-If you have any questions or suggestions, please open an issue on GitHub or contact me at motsieashley31@gmail.com.
+---
 
 Enjoy the game! 🐍
